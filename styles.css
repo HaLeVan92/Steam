@@ -1,0 +1,331 @@
+:root {
+    --button-color: #e76f51;
+    --button-hover-color: #535a3f;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: black;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  header {
+    background: black;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+    padding: 1em 0.5em;
+    z-index: 2;
+    display: block;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .responsive-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: white;
+    padding: 0px 15px 0px 0px;
+    color: hsl(278, 20%, 92%);
+  }
+  input::placeholder {
+    color: #f53232;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    width: 210px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: hsl(0, 22%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    height: 80%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .games-lists-btn {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-right: 10px;
+    background-color: transparent;
+  
+  }
+  .icon:hover {
+    cursor: pointer;
+    background-color: #e76f51;
+  }
+  
+  .nav-link {
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .nav-link-steam {
+    text-decoration: none;
+    color: black;
+  }
+  main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 2;
+    display: flex;
+    padding: 10px;
+    z-index: 0;
+  }
+  
+  .row-flex {
+    /* max-width: 210px; */
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  #action-list-btn {
+    color: white;
+    padding: 10px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  #action-list-btn:hover {
+    background-color: red;
+  }
+  #all-games-list-btn {
+    color: #f53232;
+    padding: 5px 34px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn button:hover {
+    background-color: yellow;
+    
+  }
+  
+  .gameItem {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    height: 30%;
+  }
+  /* #list games {
+    text-transform: uppercase;
+  } */
+  .list-games {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    height: 100%;
+    margin-top: 10px;
+    /* flex: 1; */
+    overflow: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: cover;
+    padding-bottom: 40px;
+  }
+  
+  .action-lists {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .responsive-header-logo {
+    background-color: white;
+    padding: 0px 50px 0px 50px;
+  }
+  
+  .li-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    padding: 5px 5px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .li-title:hover {
+    background-color: #71be74;
+    color: yellow;
+    cursor: pointer;
+  }
+  
+  h3 {
+    color: black;
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 14px;
+    }
+    .gameItem {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      width: inherit;
+      height: auto;
+    }
+    .nav-link {
+      align-items: center;
+      gap: 0.5em;
+      font-size: 14px;
+    }
+    .responsive-header-logo {
+      margin: 10px;
+      padding: 5px;
+    }
+    .row-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .list-games {
+      display: flex;
+      margin-top: 10px;
+      flex: 1;
+      overflow: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-size: cover;
+      padding: auto;
+    }
+  }
+  
+  .detailGame {
+    display: flex;
+    flex: 1;
+    padding: 0px 16px 0px 16px;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .backgroundDetailGame {
+    width: 100%;
+    aspect-ratio: 2.1;
+    /* height: 200px; */
+  }
+  
+  .detailGameTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-top: 8px;
+  }
+  
+  .detailGameDescription {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 25px;
+    margin-top: 8px;
+  }
+  
+  .genreTitle {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .genre {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .genreItem {
+    border: 1px solid white;
+    display: flex;
+    border-radius: 10px;
+    padding: 2px 15px 2px 15px;
+    flex-direction: column;
+  }
+  
+  .tag {
+    color: white;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .tagItem {
+    color: white;
+    font-size: 16px;
+  }
